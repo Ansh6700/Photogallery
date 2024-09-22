@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Gallery</title>
+    <link rel="stylesheet" href="currency.css">
+</head>
+<body>
+    <h1>Photography Gallery</h1>
+    <div class="gallery">
+        <div class="thumbnail">
+            <img src="gallery1.jpg" alt="gallery1" onclick="openModal('gallery1.jpg')">
+        </div>
+        <div class="thumbnail">
+            <img src="gallery4.jpg" alt="gallery4" onclick="openModal('gallery4.jpg')">
+        </div>
+        <div class="thumbnail">
+            <img src="gallery9.jpg" alt="gallery9" onclick="openModal('gallery9.jpg')">
+        </div>
+        <div class="thumbnail">
+          <img src="gallery8.jpg" alt="gallery8" onclick="openModal('gallery8.jpg')">
+      </div>
+      <div class="thumbnail">
+        <img src="gallery6.jpg" alt="gallery6" onclick="openModal('gallery6.jpg')">
+    </div>
+    <div class="thumbnail">
+      <img src="gallery7.jpg" alt="gallery7" onclick="openModal('gallery7.jpg')">
+  </div>
+  <div class="thumbnail">
+    <img src="gallery2.jpg" alt="gallery2" onclick="openModal('gallery2.jpg')">
+</div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
+    </div>
+
+    <script src="currency.js"></script>
+</body>
+</html>
